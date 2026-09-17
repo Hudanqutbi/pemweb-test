@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Register - Perpustakaan Teknik</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f4f6fa;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 480px;
+      padding: 48px 40px;
+      border-radius: 4px;
+    }
+
+    .login-container h1 {
+      text-align: center;
+      color: black;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .form-group {
+      margin-bottom: 28px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid #c9ccd3;
+      border-radius: 4px;
+      font-size: 15px;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .form-group input::placeholder {
+      color: #9aa0ab;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: black;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 16px;
+      background-color: black;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 17px;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .btn-login:hover {
+      background-color: black;
+    }
+
+    .redirect-text {
+      text-align: center;
+      margin-top: 24px;
+      color: black;
+      font-size: 14px;
+    }
+
+    .redirect-text a {
+      color: #47547a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .redirect-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+
+    <h1>Perpustakaan Teknik</h1>
+
+    <form>
+
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+      </div>
+
+      <div class="form-group">
+        <label for="jurusan">Jurusan</label>
+        <select id="jurusan" name="jurusan" required>
+          <option value="" disabled selected>Pilih jurusan</option>
+          <option value="informatika">Informatika</option>
+          <option value="elektro">Teknik Elektro</option>
+          <option value="mesin">Teknik Mesin</option>
+          <option value="sipil">Teknik Sipil</option>
+          <option value="industri">Teknik Industri</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="konfirmasi_password">Konfirmasi Password</label>
+        <input type="password" id="konfirmasi_password" name="konfirmasi_password" placeholder="Ulangi password" required>
+      </div>
+
+      <button type="button" class="btn-login" onclick="window.location.href='index.html'">Daftar</button>
+
+      <p class="redirect-text">Sudah punya akun? <a href="index.html">Login di sini</a></p>
+
+    </form>
+
+  </div>
+
+</body>
+</html>
